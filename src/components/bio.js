@@ -1,57 +1,37 @@
-/**
- * Bio component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
 import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 const Bio = () => {
-  const data = useStaticQuery(graphql`
-    query BioQuery {
-      site {
-        siteMetadata {
-          author {
-            name
-            summary
-          }
-          social {
-            twitter
-          }
-        }
-      }
-    }
-  `)
-
-  // Set these values by editing "siteMetadata" in gatsby-config.js
-  const author = data.site.siteMetadata?.author
-  const social = data.site.siteMetadata?.social
-
   return (
-    <div className="bio">
-      <StaticImage
-        className="bio-avatar"
-        layout="fixed"
-        formats={["auto", "webp", "avif"]}
-        src="../images/profile-pic.png"
-        width={50}
-        height={50}
-        quality={95}
-        alt="Profile picture"
-      />
-      {author?.name && (
+    <>
+      <div className="bio">
+        <StaticImage
+          className="bio-avatar"
+          layout="fixed"
+          formats={["auto", "webp", "avif"]}
+          src="https://avatars.githubusercontent.com/u/50478857?s=200&v=4"
+          width={50}
+          height={50}
+          quality={95}
+          alt="Profile picture"
+        />
+
         <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
-          {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            You should follow them on Twitter
-          </a>
+          Written by the Folks at SuperTokens — hope you enjoyed! We are always available on our Discord server. Join us if you have any questions or need any help.
         </p>
-      )}
-    </div>
+      </div>
+      <img
+        src="/discord.png"
+        formats={["auto", "webp", "avif"]}
+        alt="SuperTokens Logo"
+        style={{
+          width: "200px",
+          height: "60px",
+          margin: "0 auto",
+          display: "block"
+        }}
+      />
+    </>
   )
 }
 

@@ -1,5 +1,8 @@
 /* CSS Custom Properties Definitions */
 
+/* Rubik font */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+
 :root {
   --maxWidth-none: "none";
   --maxWidth-xs: 20rem;
@@ -27,10 +30,10 @@
   --spacing-20: 5rem;
   --spacing-24: 6rem;
   --spacing-32: 8rem;
-  --fontFamily-sans: Montserrat, system-ui, -apple-system, BlinkMacSystemFont,
+  --fontFamily-sans: "Rubik", Montserrat, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --fontFamily-serif: "Merriweather", "Georgia", Cambria, "Times New Roman",
+  --fontFamily-serif: "Rubik", "Merriweather", "Georgia", Cambria, "Times New Roman",
     Times, serif;
   --font-body: var(--fontFamily-serif);
   --font-heading: var(--fontFamily-sans);
@@ -330,4 +333,14 @@ a:focus {
   ol {
     list-style-position: inside;
   }
+}
+
+:not(pre) > code.language-text {
+  word-break: break-all;
+  background-color: #f2f2f2 !important;
+  color: #d65078 !important;
+  padding-left: 4px !important;
+  padding-right: 4px !important;
+  font-size: 16px !important;
+  border: 1px solid #d9d9d9 !important;
 }

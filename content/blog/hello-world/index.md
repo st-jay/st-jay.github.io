@@ -2,6 +2,7 @@
 title: Hello World
 date: "2015-05-01T22:12:03.284Z"
 description: "Hello World"
+cover: "/public/post-covers/adding-social-login-to-your-website-with-supertokens.png"
 ---
 
 This is my first post on my new fake blog! How exciting!
