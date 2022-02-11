@@ -46,7 +46,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id
 
       createPage({
-        path: 'blog' + post.fields.slug,
+        path: post.fields.slug,
         component: blogPost,
         context: {
           id: post.id,
@@ -67,7 +67,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     createNodeField({
       name: `slug`,
       node,
-      value,
+      value: `/blog${value}`,
     })
   }
 }

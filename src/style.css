@@ -336,7 +336,7 @@ a:focus {
 }
 
 :not(pre) > code.language-text {
-  word-break: break-all;
+  word-break: break-all !important;
   background-color: #f2f2f2 !important;
   color: #d65078 !important;
   padding-left: 4px !important;

@@ -2,7 +2,7 @@
 title: Adding social login to your website with SuperTokens (custom UI only)
 date: "2022-01-26"
 description: "This blog walks you through integrating your frontend with social login APIs provided by SuperTokens."
-cover: "/public/post-covers/adding-social-login-to-your-website-with-supertokens.png"
+cover: "/covers/cover.png"
 ---
 
 This tutorial walks you through integrating your frontend with social login APIs provided by SuperTokens.
